@@ -22,7 +22,7 @@ import org.openqa.selenium.WebElement
 public class FinalKeywords {
 	@Keyword
 	def  String convertRGBAStringToHex(String colorRGB) {
-		String[] hexValue = colorRGB.replace("rgba(", "").replace(")", "").split(",")
+		String[] hexValue = colorRGB.replace("rgb(", "").replace(")", "").split(",")
 		int hexValue1=Integer.parseInt(hexValue[0])
 		hexValue[1] = hexValue[1].trim()
 		int hexValue2=Integer.parseInt(hexValue[1])

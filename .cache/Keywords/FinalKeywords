@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "C1512B25C5B3D6D8C54E9D495F35B565",
+  "keywordFileContentHash": "3B76CE4EE7845167672A0ED223EED2A7",
   "keywordClasses": [
     {
       "name": "FinalKeywords",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "convertRGBStringToHex",
@@ -39,8 +38,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getRGBString",
@@ -58,8 +56,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getTextFromList",
@@ -77,8 +74,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "getTextOfElement",
@@ -96,11 +92,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

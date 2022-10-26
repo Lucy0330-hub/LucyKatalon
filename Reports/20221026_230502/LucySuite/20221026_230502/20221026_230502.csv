@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+LucySuite,Firefox 104.0,,,2022-10-26 23:05:13,2022-10-26 23:08:26,3m - 12.893s,FAILED
+,,,,,,,
+Test Cases/TC1_Verify UI of button Tìm Kiếm,Firefox 104.0,,,2022-10-26 23:08:18,2022-10-26 23:08:26,8.509s,FAILED
+openBrowser(TIKI_RAW_URL),Firefox 104.0,,,2022-10-26 23:08:18,2022-10-26 23:08:25,7.838s,PASSED
+"verifyElementPresent(findTestObject(""Tiki_search_Block/btn_search""), 10)",Firefox 104.0,,,2022-10-26 23:08:25,2022-10-26 23:08:26,0.642s,FAILED
