@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('/var/folders/wq/61pxhz590_11kyl3r_cxrq4c0000gn/T/Katalon/Test Cases/TC3 - Verify search result products should contain searched keyword/20221026_103700/execution.properties')
+RunConfiguration.setExecutionSettingFile('/var/folders/wq/61pxhz590_11kyl3r_cxrq4c0000gn/T/Katalon/20221026_133353/execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/TC3 - Verify search result products should contain searched keyword', new TestCaseBinding('Test Cases/TC3 - Verify search result products should contain searched keyword',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('', new TestCaseBinding('',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
