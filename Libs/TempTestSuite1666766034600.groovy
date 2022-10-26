@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("/Users/juvia/Katalon Studio/LucyKatalon/Reports/20221026_215923/LucySuite/20221026_215923/execution.properties")
+RunConfiguration.setExecutionSettingFile("/Users/juvia/Katalon Studio/LucyKatalon/Reports/20221026_133354/LucySuite/20221026_133354/execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/LucySuite', suiteProperties, new File("/Users/juvia/Katalon Studio/LucyKatalon/Reports/20221026_215923/LucySuite/20221026_215923/testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/LucySuite', suiteProperties, new File("/Users/juvia/Katalon Studio/LucyKatalon/Reports/20221026_133354/LucySuite/20221026_133354/testCaseBinding"))

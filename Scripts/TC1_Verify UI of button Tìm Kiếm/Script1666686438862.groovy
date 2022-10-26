@@ -24,12 +24,11 @@ String realText = "Tìm Kiếm"
 WebUI.verifyMatch(text, realText, true)
 
 String color = WebUI.getCSSValue(findTestObject('Tiki_search_Block/btn_search'), 'color')
-println(color)
 String colorHex = CustomKeywords.'FinalKeywords.convertRGBAStringToHex'(color)
 String realColor = "#ffffff"
 WebUI.verifyMatch(colorHex, realColor, true)
+
 String bgr = WebUI.getCSSValue(findTestObject('Tiki_search_Block/btn_search'), 'background')
-println(bgr)
 String rgbBrgColor = CustomKeywords.'FinalKeywords.getRGBString'(bgr)
 String colorBgrHex = CustomKeywords.'FinalKeywords.convertRGBStringToHex'(rgbBrgColor)
 String realBgr = '#0d5cb6'

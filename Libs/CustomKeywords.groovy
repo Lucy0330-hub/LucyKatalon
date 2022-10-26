@@ -56,6 +56,26 @@ def static "FinalKeywords.getTextOfElement"(
 }
 
 
+def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
+    	boolean expression	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
+        	expression
+         , 	description
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
+    	boolean expression	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
+        	expression
+         , 	description)
+}
+
+
 def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isTrue"(
     	boolean expression	
      , 	String description	
@@ -76,21 +96,14 @@ def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isTrue"(
 }
 
 
-def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
-    	boolean expression	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
-        	expression
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.BooleanAssert.isFalse"(
-    	boolean expression	
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFormat"(
+    	String dateInString	
+     , 	String datetimeFormat	
      , 	String description	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.BooleanAssert()).isFalse(
-        	expression
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).matchesDateTimeFormat(
+        	dateInString
+         , 	datetimeFormat
          , 	description
          , 	flowControl)
 }
@@ -107,16 +120,14 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFor
 }
 
 
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.matchesDateTimeFormat"(
-    	String dateInString	
-     , 	String datetimeFormat	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).matchesDateTimeFormat(
-        	dateInString
-         , 	datetimeFormat
-         , 	description
-         , 	flowControl)
+def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
+    	String verifiedDate	
+     , 	String compare2Date	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
+        	verifiedDate
+         , 	compare2Date
+         , 	description)
 }
 
 
@@ -129,17 +140,6 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
         	verifiedDate
          , 	compare2Date
          , 	format
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.isAfter"(
-    	String verifiedDate	
-     , 	String compare2Date	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.DateTimeAssert()).isAfter(
-        	verifiedDate
-         , 	compare2Date
          , 	description)
 }
 
@@ -239,19 +239,30 @@ def static "kms.turing.katalon.plugins.assertj.DateTimeAssert.equals"(
 
 def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNotNull"(
     	Object object	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNotNull(
         	object
-         , 	description)
+         , 	description
+         , 	flowControl)
 }
 
 
 def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNotNull"(
     	Object object	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNotNull(
         	object
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
+    	Object object	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNull(
+        	object
          , 	description
          , 	flowControl)
 }
@@ -266,12 +277,25 @@ def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
 }
 
 
-def static "kms.turing.katalon.plugins.assertj.GenericAssert.isNull"(
-    	Object object	
+def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder"(
+    	java.util.List<Object> actual	
+     , 	java.util.List<Object> expected	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsWithOrder(
+        	actual
+         , 	expected
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder"(
+    	java.util.List<Object> actual	
+     , 	java.util.List<Object> expected	
      , 	String description	
      , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.GenericAssert()).isNull(
-        	object
+    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsWithOrder(
+        	actual
+         , 	expected
          , 	description
          , 	flowControl)
 }
@@ -301,30 +325,6 @@ def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsIgnoreOrder"(
 }
 
 
-def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder"(
-    	java.util.List<Object> actual	
-     , 	java.util.List<Object> expected	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsWithOrder(
-        	actual
-         , 	expected
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.ListAssert.equalsWithOrder"(
-    	java.util.List<Object> actual	
-     , 	java.util.List<Object> expected	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.ListAssert()).equalsWithOrder(
-        	actual
-         , 	expected
-         , 	description
-         , 	flowControl)
-}
-
-
 def static "kms.turing.katalon.plugins.assertj.ListAssert.contains"(
     	java.util.List<Object> list	
      , 	java.util.List<Object> subList	
@@ -346,78 +346,6 @@ def static "kms.turing.katalon.plugins.assertj.ListAssert.contains"(
         	list
          , 	subList
          , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
-    	Object actual	
-     , 	Object expected	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
-        	actual
-         , 	expected
-         , 	description
-         , 	flowControl)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
-    	Object actual	
-     , 	Object expected	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
-        	actual
-         , 	expected
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
-    	Object x	
-     , 	Object y	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
-        	x
-         , 	y
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
-    	Object x	
-     , 	Object y	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
-        	x
-         , 	y
-         , 	description
-         , 	flowControl)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
-    	Object x	
-     , 	Object y	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
-        	x
-         , 	y
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
-    	Object x	
-     , 	Object y	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
-        	x
-         , 	y
-         , 	description
-         , 	flowControl)
 }
 
 
@@ -469,6 +397,78 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThanOrEqual"(
 }
 
 
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
+    	Object x	
+     , 	Object y	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
+        	x
+         , 	y
+         , 	description
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.lessThan"(
+    	Object x	
+     , 	Object y	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).lessThan(
+        	x
+         , 	y
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
+    	Object actual	
+     , 	Object expected	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
+        	actual
+         , 	expected
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.notEqual"(
+    	Object actual	
+     , 	Object expected	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).notEqual(
+        	actual
+         , 	expected
+         , 	description
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
+    	Object x	
+     , 	Object y	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
+        	x
+         , 	y
+         , 	description)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.greaterThan"(
+    	Object x	
+     , 	Object y	
+     , 	String description	
+     , 	FailureHandling flowControl	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).greaterThan(
+        	x
+         , 	y
+         , 	description
+         , 	flowControl)
+}
+
+
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.isNegative"(
     	Object value	
      , 	String description	
@@ -491,21 +491,21 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.isNegative"(
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
     	Object value	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
-        	value
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
-    	Object value	
      , 	String description	
      , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
         	value
          , 	description
          , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.NumberAssert.isZero"(
+    	Object value	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.NumberAssert()).isZero(
+        	value
+         , 	description)
 }
 
 
@@ -535,20 +535,31 @@ def static "kms.turing.katalon.plugins.assertj.NumberAssert.equals"(
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
     	Object value	
-     , 	String description	
-     , 	FailureHandling flowControl	) {
+     , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
         	value
-         , 	description
-         , 	flowControl)
+         , 	description)
 }
 
 
 def static "kms.turing.katalon.plugins.assertj.NumberAssert.isPositive"(
     	Object value	
-     , 	String description	) {
+     , 	String description	
+     , 	FailureHandling flowControl	) {
     (new kms.turing.katalon.plugins.assertj.NumberAssert()).isPositive(
         	value
+         , 	description
+         , 	flowControl)
+}
+
+
+def static "kms.turing.katalon.plugins.assertj.StringAssert.notEqual"(
+    	String actual	
+     , 	String expected	
+     , 	String description	) {
+    (new kms.turing.katalon.plugins.assertj.StringAssert()).notEqual(
+        	actual
+         , 	expected
          , 	description)
 }
 
@@ -562,17 +573,6 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notEqual"(
         	actual
          , 	expected
          , 	caseSensitive
-         , 	description)
-}
-
-
-def static "kms.turing.katalon.plugins.assertj.StringAssert.notEqual"(
-    	String actual	
-     , 	String expected	
-     , 	String description	) {
-    (new kms.turing.katalon.plugins.assertj.StringAssert()).notEqual(
-        	actual
-         , 	expected
          , 	description)
 }
 
@@ -595,10 +595,12 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notEqual"(
 def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
     	String text	
      , 	String subText	
+     , 	boolean caseSensitive	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).notContain(
         	text
          , 	subText
+         , 	caseSensitive
          , 	description)
 }
 
@@ -606,12 +608,10 @@ def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
 def static "kms.turing.katalon.plugins.assertj.StringAssert.notContain"(
     	String text	
      , 	String subText	
-     , 	boolean caseSensitive	
      , 	String description	) {
     (new kms.turing.katalon.plugins.assertj.StringAssert()).notContain(
         	text
          , 	subText
-         , 	caseSensitive
          , 	description)
 }
 
@@ -850,13 +850,6 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
     	String baselineName	
      , 	String testName	
@@ -865,4 +858,11 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
         	baselineName
          , 	testName
          , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }
